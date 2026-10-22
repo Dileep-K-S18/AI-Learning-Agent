@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in – AI Learning Agent</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><b class="logo">AI Learning Agent</b><nav><a href="index.html">Home</a></nav></header>
+<div class="auth board"><h3 id="ttl">Log in</h3>
+<form id="f" autocomplete="off">
+<div id="sg" hidden><label for="nm">Full name</label><input id="nm"></div>
+<label for="un">Username</label><input id="un" autocomplete="username">
+<label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password">
+<div id="sg2" hidden><label for="rl">I am a</label><select id="rl"><option value="student">Student</option><option value="teacher">Teacher</option></select>
+<div id="tc" hidden><label for="tcode">Teacher code</label><input id="tcode"></div></div>
+<p id="msg" class="err" role="alert"></p>
+<button class="btn go" type="submit" id="sub">Log in</button></form>
+<p><button class="btn" id="sw" type="button">New here? Create an account</button></p>
+<p class="meta">Demo accounts: student <b>demo</b> / <b>demo123</b> · teacher <b>teacher</b> / <b>teach123</b></p></div>
+<script src="api.js"></script>
+<script>
+const $=id=>document.getElementById(id);let mode='in';
+api('me').then(()=>location.replace('app.html')).catch(()=>{});
+function setMode(m){mode=m;const s=m==='up';$('sg').hidden=!s;$('sg2').hidden=!s;$('ttl').textContent=s?'Create account':'Log in';$('sub').textContent=s?'Sign up':'Log in';$('sw').textContent=s?'Already registered? Log in':'New here? Create an account';$('msg').textContent=''}
+$('sw').onclick=()=>setMode(mode==='in'?'up':'in');
+$('rl').onchange=()=>{$('tc').hidden=$('rl').value!=='teacher'};
+$('f').onsubmit=async e=>{e.preventDefault();$('sub').disabled=true;
+ const b={username:$('un').value,password:$('pw').value};
+ if(mode==='up'){b.name=$('nm').value;b.role=$('rl').value;b.code=$('tcode').value}
+ try{await api(mode==='in'?'login':'signup','POST',b);location.href='app.html'}
+ catch(err){$('msg').textContent=err.status?err.message:'Cannot reach the server. Start it with: python app.py';$('sub').disabled=false}};
+</script></body></html>
