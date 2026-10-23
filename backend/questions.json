@@ -1,0 +1,236 @@
+[
+ {
+  "t": "pc",
+  "l": 1,
+  "q": "What is 20% of 150?",
+  "o": [
+   "20",
+   "30",
+   "25",
+   "35"
+  ],
+  "a": 1,
+  "e": "150 × 20/100 = 30."
+ },
+ {
+  "t": "pc",
+  "l": 2,
+  "q": "A price rises by 20% and then falls by 20%. What is the net change?",
+  "o": [
+   "No change",
+   "4% decrease",
+   "4% increase",
+   "2% decrease"
+  ],
+  "a": 1,
+  "e": "Take 100. It becomes 120, then 120 − 24 = 96. Net 4% decrease."
+ },
+ {
+  "t": "pc",
+  "l": 3,
+  "q": "A number is increased by 25%. By what percent must the new number be decreased to get the original?",
+  "o": [
+   "20%",
+   "25%",
+   "15%",
+   "30%"
+  ],
+  "a": 0,
+  "e": "Take 100. It becomes 125. To return, reduce 25 out of 125, which is 20%."
+ },
+ {
+  "t": "tw",
+  "l": 1,
+  "q": "A can finish a job in 10 days. How much of the job does A do in 1 day?",
+  "o": [
+   "1/5",
+   "1/10",
+   "1/20",
+   "10"
+  ],
+  "a": 1,
+  "e": "If the whole job takes 10 days, one day gives 1/10 of the job."
+ },
+ {
+  "t": "tw",
+  "l": 2,
+  "q": "A can do a job in 6 days and B in 12 days. Working together, how many days do they need?",
+  "o": [
+   "4",
+   "3",
+   "9",
+   "8"
+  ],
+  "a": 0,
+  "e": "Per day: 1/6 + 1/12 = 3/12 = 1/4. So 4 days."
+ },
+ {
+  "t": "tw",
+  "l": 3,
+  "q": "A and B together finish a job in 12 days. A alone needs 20 days. How many days does B alone need?",
+  "o": [
+   "30",
+   "25",
+   "32",
+   "28"
+  ],
+  "a": 0,
+  "e": "B per day = 1/12 − 1/20 = 5/60 − 3/60 = 1/30. So 30 days."
+ },
+ {
+  "t": "sp",
+  "l": 1,
+  "q": "A bus runs at 60 km/h for 3 hours. What distance does it cover?",
+  "o": [
+   "120 km",
+   "180 km",
+   "150 km",
+   "200 km"
+  ],
+  "a": 1,
+  "e": "Distance = speed × time = 60 × 3 = 180 km."
+ },
+ {
+  "t": "sp",
+  "l": 2,
+  "q": "A 150 m long train crosses a pole in 10 seconds. What is its speed?",
+  "o": [
+   "15 km/h",
+   "54 km/h",
+   "36 km/h",
+   "45 km/h"
+  ],
+  "a": 1,
+  "e": "Speed = 150/10 = 15 m/s. Multiply by 18/5 to get 54 km/h."
+ },
+ {
+  "t": "sp",
+  "l": 3,
+  "q": "A man goes from home to office at 40 km/h and returns at 60 km/h. What is his average speed?",
+  "o": [
+   "48 km/h",
+   "50 km/h",
+   "45 km/h",
+   "52 km/h"
+  ],
+  "a": 0,
+  "e": "For equal distances, average = 2ab/(a+b) = 2 × 40 × 60 / 100 = 48."
+ },
+ {
+  "t": "sr",
+  "l": 1,
+  "q": "Find the next number: 2, 4, 6, 8, ?",
+  "o": [
+   "9",
+   "10",
+   "12",
+   "14"
+  ],
+  "a": 1,
+  "e": "Each term adds 2. The next is 10."
+ },
+ {
+  "t": "sr",
+  "l": 2,
+  "q": "Find the next number: 2, 6, 12, 20, 30, ?",
+  "o": [
+   "40",
+   "42",
+   "44",
+   "36"
+  ],
+  "a": 1,
+  "e": "Differences are 4, 6, 8, 10, so the next difference is 12. 30 + 12 = 42."
+ },
+ {
+  "t": "sr",
+  "l": 3,
+  "q": "Find the next number: 2, 3, 5, 9, 17, ?",
+  "o": [
+   "31",
+   "33",
+   "35",
+   "34"
+  ],
+  "a": 1,
+  "e": "Differences are 1, 2, 4, 8, so the next is 16. 17 + 16 = 33."
+ },
+ {
+  "t": "bl",
+  "l": 1,
+  "q": "A is the brother of B. B is the mother of C. How is A related to C?",
+  "o": [
+   "Father",
+   "Maternal uncle",
+   "Cousin",
+   "Grandfather"
+  ],
+  "a": 1,
+  "e": "A is the brother of C's mother, so A is C's maternal uncle."
+ },
+ {
+  "t": "bl",
+  "l": 2,
+  "q": "Pointing to a man, Ravi says, \"His mother is the only daughter of my mother.\" How is the man related to Ravi?",
+  "o": [
+   "Brother",
+   "Nephew",
+   "Uncle",
+   "Son"
+  ],
+  "a": 1,
+  "e": "Ravi's mother's only daughter is Ravi's sister. Her son is Ravi's nephew."
+ },
+ {
+  "t": "bl",
+  "l": 3,
+  "q": "A is the sister of B. C is the mother of B. D is the father of C. How is A related to D?",
+  "o": [
+   "Grandmother",
+   "Daughter",
+   "Granddaughter",
+   "Sister"
+  ],
+  "a": 2,
+  "e": "A is also C's child. C is D's child. So A is D's granddaughter."
+ },
+ {
+  "t": "cd",
+  "l": 1,
+  "q": "If A=1, B=2, C=3 and so on, what is the value of BAD?",
+  "o": [
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "a": 1,
+  "e": "B=2, A=1, D=4. The sum is 7."
+ },
+ {
+  "t": "cd",
+  "l": 2,
+  "q": "If CAT is coded as DBU, how is DOG coded?",
+  "o": [
+   "EPH",
+   "ENH",
+   "EPG",
+   "FPH"
+  ],
+  "a": 0,
+  "e": "Each letter moves one step forward: D→E, O→P, G→H."
+ },
+ {
+  "t": "cd",
+  "l": 3,
+  "q": "If CODE is coded as EQFG, how is BIRD coded?",
+  "o": [
+   "DKTF",
+   "DKSF",
+   "CJSE",
+   "DKTE"
+  ],
+  "a": 0,
+  "e": "Each letter moves two steps forward: B→D, I→K, R→T, D→F."
+ }
+]
